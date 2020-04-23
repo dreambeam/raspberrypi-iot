@@ -105,7 +105,6 @@
         replace: '{{ source_dir }}'
       with_items:
         - '/etc/systemd/system/rpi-iot-backend.service'
-        - '/etc/nginx/sites-available/default'
 
     - name: Start and enable backend service
       systemd:
